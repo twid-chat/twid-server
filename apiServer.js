@@ -39,6 +39,7 @@ const authenticateToken = (req, res, next) => {
       next();
     }
   });
+  return undefined;
 };
 
 app.get('/api/content', authenticateToken, async (req, res) => {
@@ -62,4 +63,5 @@ app.get('/api/me', authenticateToken, async (req, res) => {
   }
 });
 
+// eslint-disable-next-line no-console
 app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}`));

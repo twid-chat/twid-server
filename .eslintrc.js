@@ -15,14 +15,12 @@ module.exports = {
   },
   plugins: ['eslint-plugin-prettier'],
   rules: {
-    'consistent-return': 'off',
-    'no-console': 'off',
     'prettier/prettier': 'error',
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js'],
       },
     },
   },

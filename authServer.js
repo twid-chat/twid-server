@@ -61,6 +61,7 @@ app.post('/auth/token', async (req, res) => {
   } catch (error) {
     res.sendStatus(500);
   }
+  return undefined;
 });
 
 app.post('/auth/register', async (req, res) => {
@@ -151,4 +152,5 @@ app.post('/auth/logout', async (req, res) => {
   }
 });
 
+// eslint-disable-next-line no-console
 app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}`));
