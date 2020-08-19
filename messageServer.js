@@ -2,7 +2,9 @@ require('dotenv').config();
 const app = require('express')();
 const http = require('http').createServer(app);
 const jwt = require('jsonwebtoken');
-const io = require('socket.io')(http);
+const io = require('socket.io')(http, {
+  path: '/socket',
+});
 const db = require('./db');
 
 const PORT = 4002;
