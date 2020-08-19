@@ -8,6 +8,8 @@
     "devAuth": "nodemon authServer.js",
     "startApi": "node apiServer.js",
     "devApi": "nodemon apiServer.js",
+    "startMessage": "node messageServer.js",
+    "devMessage": "nodemon messageServer.js",
     "lint": "./node_modules/.bin/eslint . --ext js"
   },
   "keywords": [],
@@ -20,7 +22,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.2",
-    "pg": "^8.3.0"
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
